@@ -1,0 +1,252 @@
+
+body{
+    font-family: Poppins, sans-seri;
+}
+p{
+    font-family:"Open Sans", sans-serif;
+}
+h1{
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 70px;
+}
+@media only screen and (max-width:790px){
+    h1{
+        font-size: 55px;
+    }
+}
+/*start header*/
+.carousel-control-prev, .carousel-control-next {
+    justify-content: unset;
+    opacity: 1;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none;
+}
+
+
+span {
+    transition: 1s;
+}
+
+/*button span:hover {
+    background-color: white !important;
+    color: rgb(242, 84, 84) !important;
+}*/
+.carousel-caption {
+    top: 40%;
+    animation: animation_header 1s  ease;
+}
+@keyframes animation_header{
+    from {
+
+        left:100%;
+      }
+      
+      to {
+        left: 20%;
+      }
+}
+.icon{
+    top:25%;
+    z-index: 2;
+}
+.icon:hover i{
+background-color: gray !important;
+}
+.animation{
+    width: 25px;
+    height: 45px;
+    top: 85%;
+    left: 50%;
+}
+.animation_child{
+    width: 8px;
+    height: 8px;
+    animation: animate 2s infinite;
+}
+@keyframes animate{
+    from{top: 0%;}
+    to{top: 80%; opacity: 0;}
+}
+.btn-1{
+    position: absolute;
+}
+.btn-1{
+    top:0%;
+    left: -100%;
+    transition: 1s ease;
+}
+.carousel-control-next {
+    height: fit-content;
+    left: 0;
+    top:50%;
+}
+.hov:hover .btn-1
+{
+    left: 0%;
+}
+.hov:hover span{
+     color: rgb(242, 84, 84);
+}
+.carousel-control-prev {
+    height: fit-content;
+    width: fit-content;
+    left: 0;
+    top:43%;
+}
+/*strt navbar*/
+.nav-head{
+    z-index: 1000;
+}
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+li a:hover {
+    color: rgb(242, 84, 84) !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(242, 84, 84) !important;
+}
+/*end navbar*/
+/*end header*/
+/*start about*/
+
+.head-section .up{
+    left: 35%;
+    top: 15%;
+}
+.up h3::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 20%;
+    top: 110%;
+    background-color:black;
+    left: 40%;
+    transition: 1s;
+}
+.head-section:hover h3::after{
+    width: 40%;
+    top: 110%;
+    left: 30%;
+}
+.head-section p{
+    font-size:17px; 
+}
+.progress-bar {
+    background-color:rgb(242, 84, 84) ;
+    animation: bar-animation 3s ease;
+}
+@keyframes bar-animation{
+    from{width: 0%;}
+}
+/*end about*/
+/*start team*/
+.image{
+    transition: 1s;
+}
+.image-hover:hover .image-caption{
+    top: 0;
+    left: 0;
+}
+.image-hover:hover h3 {
+    color: rgb(242, 84, 84);
+}
+.image-hover img{
+    transition: 1s ;
+}
+.image-hover:hover img{
+    transform: scale(1.1,1.1);
+}
+#team i{
+    cursor: pointer;
+}
+/*end team*/
+/*start services*/
+#services ,#contact{
+    background-color: #fafafa;
+}
+.content-section h3:hover{
+    color: rgb(242, 84, 84);
+}
+/*end services*/
+/*start reviews*/
+.review .head-section .up{
+    left: 28%;
+}
+.review .head-section p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.5px;
+}
+.nav {
+    justify-content: center;
+}
+.nav-tabs{
+    border-bottom: unset;
+}
+.review img{
+    opacity: .5;
+    transform: scale(.8,.8);
+
+}
+.review .active{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+}
+/*endreviews*/
+/*start contact*/
+#contact .head-section .up{
+    left: 28%;
+}
+.contact-hover h3{
+    transition: 1s;
+}
+.contact-hover:hover h3{
+    color: rgb(242, 84, 84);
+}
+
+.contact-hover a:hover{
+    color: rgb(242, 84, 84) !important;
+}
+input
+{
+    height: 50px;
+}
+/*end contact*/
+/*start section links*/
+.btn-outline-light:hover{
+    background-color: transparent;
+    color: rgb(242, 84, 84);
+    border-color: rgb(242, 84, 84);
+}
+.links{
+    background: #222;
+   background-image: url(../images/dotted-map.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.link_icon {
+    cursor: pointer;
+}
+/*end section links*/
+/*start footer*/
+#footer{
+    background-color: #1a1a1a;
+}
+#footer i:hover{
+    color: rgb(242, 84, 84);
+    cursor: pointer;
+}
+#footer span:hover{
+    color: rgb(242, 84, 84) !important;
+    cursor: pointer;
+}
+/*end footer*/
+
